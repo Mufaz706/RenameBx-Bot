@@ -1,7 +1,19 @@
 class script(object):
     START_TEXT = """ A Simple File Renamer Bot With Permanent Thumbnail support!💯
 
-<b>Send me any Telegram file and choose appropriate option! </b>"""
+<b>Send me any Telegram file and choose appropriate option! </b>
+**👲 Maintained By** : [ᴍʜᴅ ᴍᴜꜰᴀᴢ](https://t.me/mufaz123)"""
+
+    # Buttons
+    buttons = [
+        [
+            InlineKeyboardButton('🤖 'Bot Updates, url=f"https://t.me/Bx_Botz")
+        ]
+    ]
+    await m.reply_text(
+        text=text,
+        reply_markup=InlineKeyboardMarkup(buttons)
+    )
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
     UPGRADE_TEXT = "CONTACT @mufaz123"
